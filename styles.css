@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 8%);
+  flex-direction: column;
+  font-size: 14px;
+  height: 100vh;
+}
+
+.profile {
+  background-color: hsl(0, 0%, 12%);
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.prof-pic {
+  margin-bottom: 12px;
+}
+.prof-pic img {
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+}
+
+.info {
+  margin-bottom: 25px;
+}
+.info #name {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.info #location {
+  color: hsl(75, 94%, 57%);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+#skills {
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 25px;
+}
+
+.social-links {
+  color: hsl(0, 0%, 100%);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,93 @@
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$Dark-Grey: hsl(0, 0%, 12%);
+$Off-Black: hsl(0, 0%, 8%);
+// 400,600,700
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Off-Black;
+    flex-direction: column;
+    font-size: 14px;
+    height: 100vh;
+}
+
+.profile {
+    background-color: $Dark-Grey;
+    width:300px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.prof-pic {
+    margin-bottom: 12px;
+    img {
+        border-radius: 50%;
+        height: 30%;
+        width: 30%;
+    }
+}
+.info {
+    margin-bottom: 25px;
+    #name {
+        font-weight: 700;
+        color: $White;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    
+    #location {
+        color: $Green;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+}
+
+#skills {
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: $White;
+    margin-bottom: 25px;
+}
+
+
+.social-links {
+    color: $White;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links a {
+    background-color: $Grey;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 0.8rem;
+    font-weight: 600;
+    color: $White;
+    text-decoration: none;
+
+}
+
+
+a:hover {
+    color: $Off-Black;
+    background-color: $Green;
+}
