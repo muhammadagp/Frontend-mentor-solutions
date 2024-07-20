@@ -1,0 +1,163 @@
+$White: hsl(0, 0%, 100%);
+$Rose-White: hsl(330, 100%, 98%);
+$Eggshell: hsl(30, 54%, 90%);
+$Light-Grey: hsl(30, 18%, 87%);
+$Wenge-Brown: hsl(30, 10%, 34%);
+$Dark-Charcoal: hsl(24, 5%, 18%);
+
+$Nutmeg: hsl(14, 45%, 36%);
+$Dark-Raspberry: hsl(332, 51%, 32%);
+
+@font-face {
+    font-family: 'Young serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:$Eggshell ;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+main {
+    background-color: $Rose-White;
+    border-radius:18px;
+    margin: 90px 0 90px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 700px;
+    font-family: 'outfit';
+    text-align: justify;
+    h1 {
+        font-size: 2.8rem;
+        font-family: 'young serif';
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    h2  {
+        font-family: 'young serif';
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $Nutmeg;
+        margin-top: 10px;
+    }
+
+    h3 {
+        color: $Dark-Raspberry;
+
+    }
+    li {
+        margin: 10px 0 10px 0;
+        padding-left: 20px;
+        span {
+            color: $Dark-Charcoal;
+            font-weight: 400;
+        }
+
+        b {
+            font-weight: 600;    
+        }
+    }
+
+    ul , ol{
+        list-style-position: outside;
+        padding: 20px;
+    }
+
+    .description {
+        font-weight: 400;
+    }
+   
+
+}
+
+.photo-container {
+    margin-bottom: 25px;
+    img {
+        border-radius: 0.5em;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.prep-time {
+    margin: 30px 0 10px 0;
+    background-color: $Eggshell;
+    border-radius: 0.5em;
+    padding: 20px;
+
+    li {
+        margin: 10px;
+    }
+}
+
+// only colors the number of the list
+.Ingredients , .Instructions {
+    border-bottom: 2px solid $Light-Grey;
+    color: $Nutmeg;
+    margin: 10px 0 10px 0;
+}
+
+.Nutrition {
+    margin: 10px 0 10px 0;
+    p {
+        margin: 13px 0 13px 0;
+    }
+    th , td {
+        padding: 10px;
+        border-bottom: 1px solid $Light-Grey;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th {
+        font-weight: 400;
+    }
+    td {
+        font-weight: 700;
+        color: $Nutmeg;
+    }
+    
+}
+@media (max-width:375px) {
+    main {
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .photo-container {
+        width: 100vw ;
+        img {
+            border-radius: 0;
+    
+        }
+    }
+}
+
+

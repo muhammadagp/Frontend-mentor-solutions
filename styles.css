@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Young serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 18px;
+  margin: 90px 0 90px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 700px;
+  font-family: "outfit";
+  text-align: justify;
+}
+main h1 {
+  font-size: 2.8rem;
+  font-family: "young serif";
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main h2 {
+  font-family: "young serif";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: hsl(14, 45%, 36%);
+  margin-top: 10px;
+}
+main h3 {
+  color: hsl(332, 51%, 32%);
+}
+main li {
+  margin: 10px 0 10px 0;
+  padding-left: 20px;
+}
+main li span {
+  color: hsl(24, 5%, 18%);
+  font-weight: 400;
+}
+main li b {
+  font-weight: 600;
+}
+main ul, main ol {
+  list-style-position: outside;
+  padding: 20px;
+}
+main .description {
+  font-weight: 400;
+}
+
+.photo-container {
+  margin-bottom: 25px;
+}
+.photo-container img {
+  border-radius: 0.5em;
+  width: 100%;
+  height: auto;
+}
+
+.prep-time {
+  margin: 30px 0 10px 0;
+  background-color: hsl(30, 54%, 90%);
+  border-radius: 0.5em;
+  padding: 20px;
+}
+.prep-time li {
+  margin: 10px;
+}
+
+.Ingredients, .Instructions {
+  border-bottom: 2px solid hsl(30, 18%, 87%);
+  color: hsl(14, 45%, 36%);
+  margin: 10px 0 10px 0;
+}
+
+.Nutrition {
+  margin: 10px 0 10px 0;
+}
+.Nutrition p {
+  margin: 13px 0 13px 0;
+}
+.Nutrition th, .Nutrition td {
+  padding: 10px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.Nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.Nutrition th {
+  font-weight: 400;
+}
+.Nutrition td {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 375px) {
+  main {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  .content {
+    padding: 25px;
+  }
+  .photo-container {
+    width: 100vw;
+  }
+  .photo-container img {
+    border-radius: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
